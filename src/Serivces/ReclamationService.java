@@ -98,7 +98,7 @@ public void Ajouter(Reclamation r) {
         System.out.println("Err" + ex.getLocalizedMessage());
     }
 
-    // Si le nombre de réclamations existantes pour cette adresse e-mail est supérieur ou égal à 3, ne pas insérer la nouvelle
+   // Si le nombre de réclamations existantes pour cette adresse e-mail est supérieur ou égal à 3, ne pas insérer la nouvelle
     if (existingCount >= 3) {
         System.out.println("Impossible d'ajouter plus de 3 réclamations pour l'adresse e-mail: " + email);
     } else {
@@ -206,7 +206,7 @@ public void envoyerEmailAdminNouvelleReclamation(Reclamation reclamation) throws
     int portSMTP = 2525;
     String utilisateurSMTP = "9715683c01a3e1";
     String motDePasseSMTP = "f8753bd9293ecc";
-
+ 
     // Créer une propriété avec les informations de connexion SMTP
     Properties props = new Properties();
     props.put("mail.smtp.auth", "true");
